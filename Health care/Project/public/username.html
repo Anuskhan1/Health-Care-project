@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Health Plus"> 
+    <meta name="description" content="Health Plus is proposed as an online portal for individuals. THere may be scenarios where a person wants to check his/her BP, weight and so on, and for this purpose they are required to keep visiting clinics sometimes even after an appointment is booked, That's why our health portal make the work easy">
+    <meta name="keywords" content="health, care, personal care, checkup, tips, healthy tips, safety tips, health portal, diagnosis, vital reports, BP tracker, heart monitoring, surgery, medical, faculty, facility, labs, laboratory, portal">
+
+    <title>Health Plus | A Personal Health Info-Portal </title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="Assets/CSS/Responsive.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="Assets/IMG/favicon.png">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animate On Scroll CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.0/aos.css">
+    <!-- Swiper Js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <!-- ================== 
+        Header Section Starts
+    =================== -->
+    <header style="background-color: var(--primary-color);">
+        <div class="logo">
+            <i class="fa-solid fa-kit-medical" style="color: #fff;"></i> <h4>Health Plus</h4>
+        </div>
+        <nav class="myNav" id="myNav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-list-item"><a href="Appointments.html" target="_blank" class="nav-link">Appointments</a></li>
+                <li class="nav-list-item"><a href="Health Vitals.html" class="nav-link">Personal Health Vitals</a></li>
+                <li class="nav-list-item"><a href="Blog.html" target="_blank" class="nav-link">Blog</a></li>
+                <li class="nav-list-item"><a href="About.html" class="nav-link">About</a></li>
+                <li class="nav-list-item"><a href="Contact.html" target="_blank" class="nav-link">Contact Us</a></li>
+                <li class="nav-list-item" data-bs-toggle="modal" data-bs-target="#exampleModal" id="feedback"><a href="#" class="nav-link">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- ================== 
+        Header Section Ends
+    =================== -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Your Feedback</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="https://formspree.io/f/xeqdqawr" method="POST">
+                    <div class="formBox">
+        
+                        <div class="input-box">
+                            <input type="text" id="feedfname" class="text-input" autocomplete="off" name="feedfname" required>
+                            <label for="fname" class="label">First Name</label>
+                            <span class="error-msg" id="fnameFeedError"></span>
+        
+                            <input type="text" class="text-input-2" id="feedlname" autocomplete="off" name="lname" required>
+                            <label for="lname" class="lname-lbl">Last name</label>
+                            <span class="error-msg" id="lnameFeedError"></span>
+                        </div>
+        
+                        <div class="input-box">
+                            <input type="email" class="text-input" id="feedemail" autocomplete="off" name="email" required>
+                            <label for="email" class="label">Email</label>
+                            <span class="error-msg" id="emailFeedError"></span>
+                        </div>
+        
+                        <div class="input-box">
+                            <textarea name="msg" id="feedmsg" class="text-input" cols="30" rows="5" required></textarea>
+                            <label for="msg" class="label">Your Feedback</label>
+                            <span class="error-msg" id="msgFeedError"></span>
+                        </div>
+        
+                        <div class="input-box">
+                            <label for="star" class="feedback-star">Rate Our Work</label>
+                            <div class="stars">
+                                <i class="fa-regular fa-star star" id="star1" onclick="oneStar()"></i>
+                                <i class="fa-regular fa-star star" id="star2" onclick="twoStar()"></i>
+                                <i class="fa-regular fa-star star" id="star3" onclick="threeStar()"></i>
+                                <i class="fa-regular fa-star star" id="star4" onclick="fourStar()"></i>
+                                <i class="fa-regular fa-star star" id="star5" onclick="fiveStar()"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <button class="myBtn feedback-btn">Submit</button>
+                            <span class="error-msg" id="submitFeedError"></span>
+                        </div>
+        
+                    </div>
+        
+        
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- ================== 
+        user Section Ends
+    =================== -->
+
+    <section class="section user-section">
+        <form action="index.html" method="get">
+
+            <div class="input-grp">
+                <label for="username">Username:</label>
+                <input type="text" id="username" class="username" name="username" autocomplete="off">
+            </div>
+            
+            <input type="submit" value="Login" class="input-grp myBtn" >
+        </form>
+    </section>
+
+
+    <!-- ================== 
+        User Section Ends
+    =================== -->
+
+    <!-- ================== 
+        Footer Section Starts
+    =================== -->
+
+    <footer class="section section-footer">
+        <div class="grid-4" data-aos="fade-up">
+
+            <div class="popular">
+                <h3 class="footer-headings">Popular Searches</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="Blog.html#tip1" class="footer-links">Health Tips</a></li>
+                    <li class="footer-list-item"><a href="About.html#donate" class="footer-links">Donate</a></li>
+                    <li class="footer-list-item"><a href="Blog.html#tip2" class="footer-links">Tips For Healthy Life</a></li>
+                    <li class="footer-list-item"><a href="About.html#help" class="footer-links">Call Service</a></li>
+                </ul>
+            </div>
+
+            <div class="About">
+                <h3 class="footer-headings">About Us</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="About.html#story" class="footer-links">Our Story</a></li>
+                    <li class="footer-list-item"><a href="About.html#team" class="footer-links">Team Members</a></li>
+                    <li class="footer-list-item"><a href="About.html#careers" class="footer-links">Careers</a></li>
+                    <li class="footer-list-item"><a href="About.html#policy" class="footer-links">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="quick-links">
+                <h3 class="footer-headings">Quick Links</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="Blog.html" class="footer-links">Blog</a></li>
+                    <li class="footer-list-item"><a href="Health Vitals.html" class="footer-links">Personal Health Vitals</a></li>
+                    <li class="footer-list-item"><a href="Appointments.html" class="footer-links">Appointments</a></li>
+                    <li class="footer-list-item"><a href="Contact.html" class="footer-links">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="support">
+                <h3 class="footer-headings">Support</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="About.html#donate" class="footer-links">Donation Support</a></li>
+                    <li class="footer-list-item"><a href="About.html#teamSupport" class="footer-links">Team Support</a></li>
+                    <li class="footer-list-item"><a href="About.html#management" class="footer-links">Management</a></li>
+                    <li class="footer-list-item"><a href="About.html#help" class="footer-links">Help Center</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="main-footer">
+            <div class="logo">
+                <i class="fa-solid fa-kit-medical"></i> <h4>Health Plus</h4>
+            </div>
+            <p>&copy; 2022 Health Plus. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- ================== 
+        Footer Section Ends
+    =================== -->
+
+    <!-- Loader Section Starts -->
+    <!-- <div class="loader-container">
+        <img src="Assets/IMG/loader1.gif" alt="loader-image">
+    </div> -->
+    <!-- Loader Section Ends -->
+
+
+
+    
+    <!-- Main Js File -->
+    <script src="Assets/JS/Script.js"></script>
+
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/c35a4020ae.js" crossorigin="anonymous"></script>
+
+    <!-- Animate On Scroll CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.0/aos.js"></script>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        loopFillGroupWithBlank: true,
+      });
+
+    //   Animate On Scroll Code
+      AOS.init({
+        duration:1200,
+    })
+    </script>
+</body>
+</html>

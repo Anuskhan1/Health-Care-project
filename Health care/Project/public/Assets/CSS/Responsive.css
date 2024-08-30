@@ -1,0 +1,401 @@
+
+@media (max-width:1127px){
+    body{
+        overflow-x: hidden;
+    }
+    header .toggle-menu{
+        display: block;
+    }
+    .myNav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+        width: 550px;
+        height: 100vh;
+        transform: translateX(150vw);
+        background-color: #fff;
+        z-index: 999999;
+    }
+    .myNav.active{
+        transform: translateX(0);
+    }
+    .myNav .nav-list{
+        flex-direction: column;
+        align-items: center;        
+        justify-content: center;
+        margin: 3em 0;
+    }
+    header .myNav .nav-list .nav-list-item{
+        margin: 15px 0 ;
+        font-size: 1.2em;
+    }
+    header .myNav .nav-list .nav-list-item .nav-link{
+        color: var(--primary-color);
+    }
+    .myNav .nav-list .nav-list-item .nav-link{
+        font-size: 1.5em;
+    }
+    .toggle-menu.active{
+        position: fixed;
+        right: 50px;
+        top: 10px;
+    }
+    .toggle-menu span{
+        position: absolute;
+        top: 25px;
+        left: 15px;
+    }
+}
+@media (max-width:1100px){
+    .blog-right .box .author{
+        padding: 1em 0 2em;;
+    }
+    .blog-right .box .author-para{
+        font-size: .9em;
+    }
+    .blog-right .box .popular-posts .popular-post .post-box .post-title{
+        font-size: 18px;
+    }
+    .blog-right .box .popular-posts .popular-post .post-box .time-posted{
+        font-size: 15px;
+        top: 62%;
+        left: 53%;
+    }
+    .blog-right .box .connected .connected-icons{
+        gap: 10px;
+        font-size: 1em;
+    }
+}
+@media (max-width:1080px){
+    .appointment-section .ill img{
+        width: 90%;
+    }
+}
+@media (max-width:1015px){
+    .consult-section .consult-left p{
+        max-width: 100%;
+    }
+    .consult-section .consult-right input{
+        width: 350px;
+    }
+    .blog-cards .blog-card .card-content{
+        width: 90%;
+    }
+}
+@media (max-width:890px){
+    .slide-content p{
+        max-width: 100%;
+    }
+    .consult-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 2em;
+    }
+    .consult-section .consult-right input{
+        width: 500px;
+    }
+    .team-card .expertise{
+        margin-left: 2.8em;
+    }
+    .blog-left{
+        max-width: 90%;
+    }
+    .blog-right{
+        max-width: 100%;
+    }
+    .blog-right .box .author{
+        padding: 1em 0 2em;;
+    }
+    .blog-right .box .author-para{
+        font-size: .9em;
+    }
+    .blog-right .box .popular-posts .popular-post .post-box .post-title{
+        font-size: 18px;
+    }
+    .blog-right .box .popular-posts .popular-post .post-box .time-posted{
+        font-size: 15px;
+        top: 62%;
+        left: 150px;
+    }
+    .blog-right .box .connected .connected-icons{
+        gap: 10px;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:760px){
+    .team-card .expertise{
+        margin-left: 5em;
+    }
+}
+
+@media (max-width:710px){
+    footer .main-footer{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:690px){
+    .section-footer{
+        padding: 50px 30px;
+    }
+    footer .main-footer p{
+        font-size: 16px;
+    }
+    .main-form{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+    .blog-section{
+        padding: 3em 1em;
+    }
+    .blog-cards .blog-card .card-content{
+        width: 100%;
+    }
+    .about-section{
+        padding: 2em 1em;
+    }
+    .about-section .about{
+        padding: 0 1em;
+    }
+}
+
+@media (max-width:550px){
+    .loader-container img{
+        width: 350px;
+    }
+    .myNav{
+        width: 350px;
+    }
+    .myNav .nav-list .nav-list-item .nav-link{
+        font-size: 1.2em;
+    }
+    .consult-section .consult-right input{
+        width: 340px;
+    }
+    .appointment-section{
+        padding: 2em 1em;
+    }
+    .appointment-section .main-form{
+        grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+        gap: 20px;
+    }
+    .appointment-section .ill img{
+        width: 350px;
+    }
+    .formBox{
+        max-width: 450px;
+    }
+    .input-box{
+        flex-direction: column;
+        margin: 2em .5em;
+    }
+    #fname{
+        width: 100%;
+    }
+    #lname{
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    .formBox .input-box .lname-lbl{
+        font-size: 18px;
+        position: absolute;
+        top: 70%;
+        left: 10px;
+    }
+    .formBox .input-box .text-input-2:focus ~ .lname-lbl,
+    .formBox .input-box .text-input-2:valid ~ .lname-lbl{
+        top: 55%;
+    }
+    .blog-cards .blog-card{
+        min-width: 350px;
+    }
+    .top-btn{
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+    #fnameError{
+        top: 50px;
+    }
+    #lnameError{
+        left: 5px;
+    }
+    .about-section .about{
+        margin-top: 3em;
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        row-gap: 10px;
+    }
+}
+
+@media (max-width:510px){
+    .slide-content h3{
+        font-size: 2.5em;
+    }
+    .slide-content p{
+        font-size: 16px;
+    }
+    .section-footer{
+        padding: 50px 20px;
+    }
+    .section-footer .main-footer{
+        flex-direction: column;
+    }
+    .slide-content{
+        padding: 0 1em;
+    }
+    .consult-section{
+        padding: 1em;
+    }
+    .consult-section .consult-left h3{
+    font-size: 2.5em;
+    }
+    .team-section .heading{
+        font-size: 2.1em;
+    }
+    .team-section .team-cards{
+        padding: 2em 1em;
+    }
+    .team-cards .team-card .name{
+        font-size: 1.7em;
+    }
+    .team-cards .team-card .expertise{
+        font-size: 1em;
+    }
+    .appointment-section .main-form{
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        gap: 20px;
+    }
+    .formBox{
+        max-width: 350px;
+    }
+    .appointment-section .heading{
+        font-size: 2.3em;
+    }
+}
+@media (max-width:450px){
+    .blog-cards .blog-card{
+        padding: 1em .5em;
+        margin-bottom: 14em;
+    }
+    .blog-cards .blog-card .card-content{
+        width: 100%;
+        bottom: -50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-20%);
+        padding: 2em 3em;
+    }
+
+    .blog-right .box{
+        padding: 1em;
+    }
+}
+@media (max-width:410px){
+    .services-cards{
+        margin-top: 2em;
+        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    }
+    .about-section .about{
+        margin-top: 3em;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        row-gap: 10px;
+    }
+}
+
+@media (max-width:390px){
+    .team-section .team-cards{
+        padding: 2em 1em;
+    }
+    .team-cards .team-card{
+        max-width: 300px;
+    }
+    .team-card .expertise{
+        margin-left: 2em;
+    }
+    .appointment-section .main-form{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap: 10px;
+    }
+    .formBox{
+        max-width: 300px;
+    }
+    .blog-cards .blog-card{
+        padding: 1em .5em;
+        margin-bottom: 14em;
+        min-width: 300px;
+    }
+    .blog-cards .blog-card .card-content{
+        left: 50%;
+        transform: translateX(-50%) translateY(-20%);
+        padding: 2em 1em;
+    }
+    .about .about-heading{
+        font-size: 2.1em;;
+    }
+    .about .about-para{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:365px){
+    .consult-section .consult-right input{
+        width: 310px;
+    }
+    .blog-cards .blog-card .card-content{
+        padding: 1em;
+    }
+    .about-section .about{
+        margin-top: 3em;
+        grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+        row-gap: 10px;
+    }
+}
+
+@media (max-height:870px){
+    .blog-cards .blog-card img{
+        position: relative;
+        width: 100%;
+        min-height: 400px;
+    }
+    .blog-cards .blog-card{
+        min-height: 60vh;
+        padding: 1em;
+        margin-bottom: 20em;
+    }
+    .blog-cards .blog-card .card-content{
+        width: 100%;
+        transform: translateX(-50%) translateY(10%);
+        padding: 2em;
+    }
+}
+@media (max-height:770px){
+    .modal-dialog{
+        margin-top: 8em !important;
+    }
+    .blog-card img{
+        min-height: 400px;
+    }
+}
+@media (max-height:720px){
+    .modal-dialog{
+        margin-top: 10em !important;
+    }
+}
+@media (max-height: 690px){
+    .blog-cards .blog-card{
+        margin-bottom: 25em;
+    }
+    .blog-cards .blog-card .card-content{
+        transform: translateX(-50%) translateY(30%);
+    }
+}
+@media (max-height:665px){
+    .modal-dialog{
+        margin-top: 12em !important;
+    }
+}
+@media (max-height:665px){
+    
+}
